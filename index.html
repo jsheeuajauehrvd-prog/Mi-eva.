@@ -10,11 +10,16 @@
       color: white;
       text-align: center;
       font-family: Arial, sans-serif;
-      padding: 20px;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
     }
 
     button {
-      padding: 14px 22px;
+      padding: 14px 24px;
       font-size: 18px;
       border: none;
       border-radius: 12px;
@@ -24,41 +29,17 @@
     }
 
     button:hover {
-      background: #ff2f55;
-    }
-
-    .snoopy {
-      font-size: 80px;
-      animation: float 2s infinite ease-in-out;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-18px); }
+      background: #ff1f4d;
     }
   </style>
 </head>
 
 <body>
+  <h1>Mi Eva 💖</h1>
+  <p>Esto es solo para ti</p>
 
-  <h1>Mi Eva 💕</h1>
-  <p>Esto es para ti con mucho amor</p>
-
-  <div class="snoopy">🐶💖</div>
-
-  <br><br>
-
-  <button onclick="playMusic()">▶ Reproducir música</button>
-
-  <audio id="music">
-    <source src="https://files.catbox.moe/8v8r7g.mp3" type="audio/mpeg">
-  </audio>
-
-  <script>
-    function playMusic() {
-      document.getElementById("music").play();
-    }
-  </script>
-
+  <button onclick="alert('Te amo Eva 💕')">
+    ▶ Play
+  </button>
 </body>
 </html>
