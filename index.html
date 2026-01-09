@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi Eva 💖</title>
+
+<style>
+body{
+  background:#0b1020;
+  color:white;
+  text-align:center;
+  font-family:Arial;
+  padding:20px;
+}
+button{
+  padding:14px 22px;
+  font-size:18px;
+  border:none;
+  border-radius:12px;
+  background:#ff4d6d;
+  color:white;
+  cursor:pointer;
+}
+button:hover{
+  background:#ff1f4c;
+}
+.snoopy{
+  width:220px;
+  animation: flotar 3s ease-in-out infinite;
+}
+@keyframes flotar{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-18px);}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Buenos días, mi Eva 💕</h1>
+
+<img class="snoopy"
+src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif"
+alt="Snoopy">
+
+<p>Que este día esté lleno de la misma dulzura que tú llevas en el alma 💖</p>
+
+<br>
+
+<button onclick="document.getElementById('music').play()">
+▶ Reproducir música
+</button>
+
+<audio id="music">
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
